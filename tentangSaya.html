@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Book Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=&callback=viewMap">
+    </script> -->
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 style="font-family:Phillips Muler Signature">World Book</h1>
+        <p style="font-family: 'Times New Roman', Times, serif">Website review buku sederhana berdasarkan opini pribadi
+        </p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="buku.html">Buku</a>
+        <a href="kategori.html">Kategori</a>
+        <a href="tentangSaya.html">Tentang Penulis</a>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card-detail-author">
+                <h2 style="margin-bottom: 8px;">Tentang Penulis (creator web) </h2>
+                <h5 style="margin-top: 0px;">Oktaviano Andy Suryadi</h5>
+                <img src="img/me.jpg" alt="buku kisah tanah jawa" width="250px">
+                <div id="info-buku">
+                    <h3>Informasi Pribadi</h3>
+                    <table style="float: left; margin-left: 40px; margin-top: 16px">
+                        <tr>
+                            <td style="width: 200px">Nama</td>
+                            <td style="width: 200px"> <b>Oktaviano Andy Suryadi </b></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">Tempat Lahir</td>
+                            <td style="width: 200px"><b>Lumajang</b> </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">Tanggal Lahir</td>
+                            <td style="width: 200px"><b>2 Oktober 1999 </b></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 200px">Status</td>
+                            <td style="width: 200px"><b>Mahasiswa</b></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">Kampus</td>
+                            <td style="width: 200px"><b>Politeknik Negeri Malang</b></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px">Jurusan</td>
+                            <td style="width: 200px"><b>Teknologi Informasi</b></td>
+                        </tr>
+                        <tr style="height: 70px">
+                            <td></td>
+                        </tr>
+                    </table>
+                    <h3 style="margin-top: 32px; margin-left: 0px; width: 80%">Keseharian</h3>
+                    <p style="float: left">Yaa supaya lebih mengenal lagi lah ya :D <br><br>
+                        Sebenernya engga ada yang
+                        menarik sih. Keseharianku hanya pergi ke kampus, belajar, pulang, tidur, ngoding
+                        sudah cuman gitu ajah :D. Author disini juga hobi baca buku khususnya buku yang bergenre
+                        misteri, horor, thriller. Intinya yang bisa membuat penasaran dan bulu kuduk merinding pasti
+                        bakalan author sukai. Saat ini author sedang menempuh studi D4 TI di POLITEKNIK Negeri Malang.
+                        Bisa dibilang rasanya enggak seperti kuliah di tempat lain, di sini lebih cocok disebut dengan
+                        sekolah lagi :D. Tiada hari tanpa Jobsheet :D <br> <br>
+                        Udah sekian dulu yee dari author, nanti kalo ada pertanyaan silahkan kirim lewat email aja yee..<br>
+                        Babaaay.. :) Terimakasih sudah berkunjung :)
+                    
+                    </p>
+
+                    <h3 style="margin-top: 26px; margin-left: 0px; width: 80%; float: left; margin-bottom: 0px">Lokasi author</h3>
+                    <p style="float: left">Ayooo ketemuan sama author :D. Ketemuan di kampus aja ya :D 
+                    <div id="map" style="width:80%;height:300px; margin-top: 0px"></div>
+                    <!--
+                        <script>
+                            function initMap() {
+                    
+                                //membuat object untuk titik koordinat
+                                var lokasiAuthor = { lat: -7.9465236, lng: 112.6133481 };
+
+                                //membuat onjek peta
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 15,
+                                    center: lokasiAuthor
+                                });
+                    
+                                //membuat konten untuk info window
+                                var contentString = '<h2>Author disini!</h2>';
+                    
+                                //membuat object untuk info window
+                                var infoWindow = new google.maps.InfoWindow({
+                                    content: contentString,
+                                    position: lokasiAuthor
+                                });
+                    
+                                // membuat marker
+                                var marker = new google.maps.Marker({
+                                    position: lokasiAuthor,
+                                    map: map,
+                                    animation: google.maps.Animation.BOUNCE
+                                });
+                    
+                                infoWindow.open(map, marker);
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+                    -->
+                    
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <a href="tentangSaya.html" class="tentang-saya">
+                <div class="card">
+                    <h3>Tentang Saya</h3>
+                    <center><img src="img/me.jpg" alt="OktavianAndy"></center>
+                    <p>Pemuda gabut, sering berdiam diri di kosan untuk mencari inspirasi...<br>
+                    </p>
+                </div>
+            </a>
+            <div class="card">
+                <h3>Pengumuman</h3>
+                <p>Ingin review kalian ada di website ini? Kirim review kalian ke email author web yaa,
+                    agar kawan-kawan kalian tahu buku yang menarik bagi kalian apa saja.. <br><br>
+                    Terimakasih yaa..
+                </p>
+            </div>
+            <div class="card">
+                <h3>Temukan saya di..</h3>
+                <p>Email : nekkawai5@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>&copy; 2019 OktavianAndy</h4>
+    </div>
+</body>
+
+</html>
